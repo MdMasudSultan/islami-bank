@@ -22,7 +22,7 @@ depositBtn.addEventListener('click', function(){
 
     document.getElementById('depositAmount').value = "";
 
-    // withdrow button event handlar
+    // withdraw button event handlar
 
     const withdraw = document.getElementById('addWithdraw');
     withdraw.addEventListener('click', function() {
@@ -43,9 +43,9 @@ depositBtn.addEventListener('click', function(){
       
     }
 })
-function updateSpanText(id,depositNumber) {
+function updateSpanText(id,addNumber) {
     const current = document.getElementById(id).innerText;
     const currentNumber = parseFloat(current);
-    const totalAmount = currentNumber + depositNumber;
+    const totalAmount =   addNumber+ currentNumber;
     document.getElementById(id).innerText = totalAmount;
 }
