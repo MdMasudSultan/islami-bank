@@ -14,7 +14,7 @@
         <div class="login-from">
             <h4>Log in form</h4>
             <br>
-            <input type="text" class="form-control" placeholder="Enter your E-mail">
+            <input type="email" class="form-control" placeholder="Enter your E-mail">
             <br>
             <input type="password" class="form-control" placeholder="Enter your Password">
             <br>
@@ -26,7 +26,52 @@
     <!-- second part -->
 
     <div id="transaction-area">
-        <h1 class="text-center">Transaction area</h1>
+       <div class="row ">
+           <div class="col-md-4">
+               <div class="deposit status">
+                <h5>Deposit</h5>
+                <h3>$ <span id="currentDeposit">00</span></h3>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="withdraw status">
+                <h5>Withdraw</h5>
+                <h3>$ <span id="currentWithdraw">00</span></h3>
+               </div>
+           </div>
+
+           <div class="col-md-4">
+               <div class="balance status">
+                <h5>Balance</h5>
+                <h3>$ <span id="currentBalance">1650</span></h3>
+               </div>
+           </div>
+
+
+       </div>
+       
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="login-from">
+                        <h4>Deposit</h4>
+                    <input id="depositAmount" type="text" placeholder="$ amount you want to deposit"  class="form-control">
+                    <br>
+                    <button id="addDeposit" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                   <div class="login-from">
+                    <h4>Withdraw</h4>
+                    <input id="withdrawAmount"  type="text" placeholder="$ amount you want to withdraw" class="form-control">
+                    <br>
+                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                   </div>
+                </div>
+            </div>
     </div>
     
 <script src="bank.js"></script>
